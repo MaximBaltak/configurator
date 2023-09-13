@@ -1,0 +1,11 @@
+$text-color: #000836;
+.container{
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+@mixin customWidth($max-width){
+  @media screen and (max-width: $max-width) {
+    @content
+  }
+}

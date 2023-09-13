@@ -1,0 +1,17 @@
+{
+  "name": "configurator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "client": "cd client && npm run serve",
+    "server": "cd server && npm run start:dev",
+    "start": "concurrently \" npm run server \" \" npm run client\" ",
+    "init": "npm install && cd server && npm install && cd.. && cd client && npm install --force"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^8.2.1"
+  }
+}
